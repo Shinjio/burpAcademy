@@ -2,10 +2,11 @@ import requests
 import sys
 
 url = "https://0aef00ca03a7195681a3a218008b008e.web-security-academy.net/"
-chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz"
+chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
 i=1
 while(True):
+    found = False
     end = len(chars)-1
     start = 0
     while(start <= end):
@@ -28,8 +29,10 @@ while(True):
                 sys.stdout.write(chars[mid])
                 sys.stdout.flush()
                 i += 1
+                found = True
                 break
             #smaller
             else:
                 end = mid -1 
-
+    if(not found):
+        break
