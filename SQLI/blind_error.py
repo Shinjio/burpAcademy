@@ -1,7 +1,7 @@
 import requests
 import sys
 
-url = "https://0a0c0026044c266c86759da9006f00fd.web-security-academy.net/"
+url = "https://0aef00ca03a7195681a3a218008b008e.web-security-academy.net/"
 chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 i=1
